@@ -10,7 +10,7 @@
             com.mysql.jdbc.Driver
         </property>
         <property name="hibernate.connection.url">
-            jdbc:mysql://localhost/ksiegarnia
+            jdbc:mysql://localhost/zadanialukasz
         </property>
         <property name="hibernate.connection.username">
             root
@@ -26,3 +26,12 @@
         <property name="format_sql">true</property>
         <property name="generate_statistics">true</property>
         <property name="hibernate.hbm2ddl.auto">create-drop</property>
+
+        <mapping class="com.sda.hibernate.entity.Job"></mapping>
+        <mapping class="com.sda.hibernate.entity.Category"></mapping>
+        <mapping class="com.sda.hibernate.entity.Affiliate"></mapping>
+
+
+    </session-factory>
+</hibernate-configuration>
+
